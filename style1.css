@@ -1,0 +1,545 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior:smooth;
+}
+/* The Background Of the website */
+body{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 500vh;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600px;
+    
+    
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/* The Navbar */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8px;
+    list-style: none;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.logo{
+    cursor: pointer;
+    width: 80px;
+    height:80px
+    
+}
+.nav-area{
+    list-style: none;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+.nav-area li{
+    display: inline-block;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    
+
+    
+   
+}
+.nav-area li a{
+    
+    transition-timing-function: ease-out;
+    text-decoration: none;
+    color: seashell;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.nav-area li a:hover{
+    
+    color:rgb(105, 71, 8);
+    transition: all 0.2s;
+    /* transition-timing-function: ease-in; */
+    background-color:wheat;
+    padding: 10px;
+    border-radius: 5px;
+
+   
+    font-size: 20px;
+}
+
+/* The Banner */
+.card{
+    height: 300px;
+    min-width: 250px;
+    width: 450px;
+    background: linear-gradient(-45deg, #6db4d4, #306ae7);
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: whitesmoke;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin: auto;
+    box-shadow: 10px 10px 10px rgb(49, 48, 48);
+
+
+}
+
+.card img{
+    height:300px;
+    max-width: 100%;
+    position: absolute;
+    top: 16%;
+    left: 3%;
+    border-radius: 20px;
+    transition: all 0.2s;
+    
+}
+.card h2{
+    color: black;
+    transition: all 0.2s;
+    /* font-family: 'Merienda', cursive; */
+    font-family: 'Timmana', sans-serif;
+    font-size: 27px;
+    
+}
+.card p{
+    width: 225px;
+    margin-bottom: 40px;
+    transition: all 0.2s;
+    font-weight: bold;
+    opacity: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    /* text-transform: uppercase; */
+    font-size: 17px;
+    line-height: 19px;
+}
+.card a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: blanchedalmond;
+    background-color:brown ;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.2s;
+    opacity: 0;
+}
+
+.card .quote p{
+    position: absolute;
+    top: 130%;
+    right: -15%;
+    opacity: 1;
+    width: 550px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.card:hover .quote p{
+    opacity: 0;
+}
+.card a:hover{
+    color: orange;
+    background-color: black;
+}
+
+.card:hover img{
+    top:75%;
+    left: 45%;
+   
+}
+
+.card:hover h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+
+
+.card:hover a,
+.card:hover p{
+    opacity: 1;
+}
+
+/* The Thunderbolt Button */
+.logout{
+    text-decoration: none;
+    color: black;
+    background-color: black;
+}
+
+
+/* The About us section */
+.aboutus{
+    height: 470px;
+    width: 540px;
+    margin-top: 350px;
+    margin-left: 86px;
+    line-height: 27px;
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+    position: relative;
+}
+
+.aboutus h1{
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 40px;
+    padding: 15px 5px;
+    /* background-color: rgba(0, 0, 0, .1); */
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 0 #ee7752;
+    transition: ease-out 0.3s;
+    font-family: 'Timmana', sans-serif;
+
+}
+
+.aboutus p{
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+
+.aboutus h1:hover{
+    box-shadow: inset 300px 0 0 0 #ee7752;
+    cursor: pointer;
+    color: black;
+    font-size: 40px;
+}
+
+.photo1 img{
+    height:250px;
+    max-width: 100%;
+    position: absolute;
+    top: 6%;
+    left: 121%;
+   
+}
+
+.photo2 img{
+    height:250px;
+    max-width: 100%;
+    position: absolute;
+    top: 36%;
+    left: 194%;
+   
+}
+
+.photo3 img{
+    height:250px;
+    max-width: 100%;
+    position: absolute;
+    top: 69%;
+    left: 112%; 
+}
+/* Our Wings */
+.wing{
+    position: relative;
+    margin-left: 100px;
+    margin-top: 160px;
+}
+
+.Wing_heading{
+    position: absolute;
+    top: 130%;
+    left: 0%;
+    z-index: 1;
+    width: 220px;
+    padding: 10px 5px;
+    font-family: 'Timmana', sans-serif;
+    font-size: 2.8em;
+    border-radius: 15px;
+    box-shadow: inset 0 0 0 0 rgba(241, 108, 31, 0.2);
+    transition: ease-out 0.3s;
+    color: rgb(34, 33, 33);
+}
+    
+.container{
+    position: absolute;
+    display: flex;
+    justify-content:centre;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+    left: 0px;
+    top: 68px;
+}
+.container .plates{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0,0 , 0.5);
+    border-radius: 20px;
+    background: rgba(225, 225, 225, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(7px);
+}
+
+.container .plates .plate_content{
+    padding: 20px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s;
+}
+.container .plates:hover .plate_content{
+    transform: translate(0px);
+    opacity: 1;
+}
+.container .plates .plate_content h1{
+    position: absolute;
+    font-size: 65px;
+    top: -30px;
+    right: -35px;
+    color: rgba(225, 225, 225, 0.2);
+    pointer-events: none;
+    font-family: 'Timmana', sans-serif;
+    
+}
+.container .plates .plate_content h2{
+    font-size: 2.6em;
+    margin-bottom: 28px;
+    color: rgb(233, 216, 204);
+    z-index: 1;
+    font-weight: bold;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    letter-spacing: 5px;
+    left: 20px;
+}
+
+.container .plates .plate_content ul{
+    font-size: 1em;
+    color: whitesmoke;
+    font-weight: 500;
+    font-family: 'Timmana', sans-serif;
+}
+.container .plates .plate_content a{
+    position: absolute;
+    display: inline-block;
+    padding: 10px 18px;
+    margin-top: 10px;
+    background:rgb(233, 216, 204);
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 10px 10px rgba(0, 0,0 , 0.5);
+}
+
+
+
+.Wing_heading:hover{
+    box-shadow: inset 250px 0 0 0 #ee7752;
+    color: black;
+    
+}
+
+.project{
+    position: relative;
+    margin-left: 100px;
+    margin-top: 00px;
+    top: 17%;
+
+}
+
+.project_heading{
+    position: absolute;
+    top: 6%;
+    left: 0%;
+    z-index: 1;
+    width: 200px;
+    padding: 10px 5px;
+    font-family: 'Timmana', sans-serif;
+    font-size: 2em;
+    border-radius: 15px;
+    color: rgb(34, 33, 33);
+}
+.project_heading h3{
+    line-height: 34px;
+    color: aliceblue;
+    display: inline-block;
+}
+
+
+.box{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 300px;
+    left: 35%;
+    transform-style: preserve-3d;
+    animation: animate 60s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%
+    {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.box span{
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0,0 , 0.5);
+    border-radius: 20px;
+    background: rgba(225, 225, 225, 0.1);
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg))translateZ(400px);
+    -webkit-box-reflect:below 0px linear-gradient(transparent,transparent,#0004);
+}
+
+.box span img{
+    position: absolute;
+    left: 15%;
+    top: 13%;
+    /* width: 100%;
+    height: 100%; */
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.box span h2{
+    position: absolute;
+    left: 16%;
+    top:5% ;
+    color: rgb(233, 216, 204);
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.box span p{
+    position: absolute;
+    left: 6%;
+    top:82% ;
+    color: rgb(233, 216, 204);
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.box span:hover p{
+    transform: translate(0px);
+    opacity: 1;
+}
+.contacts{
+    position: relative;
+    margin-left: 100px;
+    margin-top: 00px;
+    top: 45%;
+    
+}
+
+.contacts h1{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    z-index: 1;
+    width: 300px;
+    padding: 10px 5px;
+    font-family: 'Timmana', sans-serif;
+    font-size: 2.6em;
+    border-radius: 15px;
+    color: rgb(34, 33, 33);
+}
+
+.bucket{
+    position: absolute;
+    display: flex;
+    justify-content:centre;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+    left: 100px;
+    top: 100px;
+    width: 1200px;
+    
+}
+
+.bucket .followCard{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 70px;
+}
+
+.bucket .followCard .followCard_content a img{
+    transform: translateY(0px);
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+}
+
+@keyframes float{
+    0%{
+        box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.6);
+        transform: translateY(0px); 
+    }
+    50%{
+        box-shadow: 0px 25px 12px 0px rgba(0, 0, 0, 0.4);
+        transform: translateY(-20px); 
+    }
+    0%{
+        box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.6);
+        transform: translateY(0px); 
+    }
+}
+.bucket .followCard .followCard_content h3{
+    margin-left: 5px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
